@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "benchmark": "./scripts/benchmarks.js",
+    "benchmark": "./scripts/benchmark.js",
     "deploy": "./deploy.sh"
   },
   "repository": {
