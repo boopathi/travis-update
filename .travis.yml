@@ -1,6 +1,8 @@
 language: node_js
 node_js:
-- "7"
-
+- '7'
 script:
-- npm run benchmark
+- npm run deploy
+env:
+  global:
+    secure: wOd6aozHXrbAoRNFRwtbtRXg6F0QyJA9mP9C7WlZZbRm0zr7GgReUAEbdCpZ2SZHZov32BBq/Mgj72sCMMPvI4Pj1ykSCZuxw11eblxSDiEU5uFatmp0IP6U/Rza47cGh06/K5s9cxy1wZNf50FoPy5aLdr79vN3WNNJ7GuLIQ2Dj+ccfHEmIjCwtOwB0KGYbEo8yhsd1m74DQuycK+YbnAbYJgCKsfwCYK+xEx/WOtAHaqToo/8pyaxpyrEpAyVsAvKrOUMyd+2wAHHHIW+dvavKc89bPk5DX7n2Yf6YXFd3EMVdVaS/vwIPGptDabSYVal1oYq56qAJNRHohMjzVa7MtLB/v0ChPB3I6gBXnhDaC3P6diyp4TJah76TZxGLFMxzq/VD6dJwdAdX6lVNTO8uuuBtEaJuRNJcCer9SEgx/G54SozIhPSJRzBZrp/hWw/o40qWetP2N9gsUpZ/8hB3gRR2oQHRcPNyec1g5iCz9ApBm9njf65tpG6b7dimSp9MLSW3+Atw6dQKKPQRrB/2QeTYcCB5oF29TbC4pD86Zm2gGo+Am4P1T7vwJNIYjkEtIMtSAkbqimv1LmQ3Wz5mZjcSzO8YtvF0MIL3h6gDRFr51IcKns+B1aMURl5fZQpByexUzpL7NeuM66IlpbQazFRxUJvPKl6/AXEvaI=
