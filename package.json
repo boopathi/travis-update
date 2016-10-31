@@ -1,0 +1,21 @@
+{
+  "name": "travis-update",
+  "version": "1.0.0",
+  "description": "Nothing to see here.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "benchmark": "./scripts/benchmarks.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boopathi/travis-update.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boopathi/travis-update/issues"
+  },
+  "homepage": "https://github.com/boopathi/travis-update#readme"
+}
