@@ -21,7 +21,7 @@ run_benchmark
   cd tmp
   git config user.name "Travis CI"
   git config user.email "$COMMIT_AUTHOR_EMAIL"
-  cp ../benchmark.js ./benchmark.js
+  cp ../benchmarks.md ./benchmarks.md
   git add .
   git commit -m "[skip ci] Update Benchmark"
   git push --quiet "https://${GH_TOKEN}@${GH_REF}" > /dev/null 2>&1
