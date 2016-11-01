@@ -12,6 +12,7 @@ function rand() {
 function generateRandomBenchmark() {
   fs.writeFileSync(BENCHMARK_FILE,
 `
+<!--This file is auto generated. DO NOT EDIT-->
 # Benchmark
 
 \`\`\`
