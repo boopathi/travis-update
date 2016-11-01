@@ -15,7 +15,7 @@ function generateRandomBenchmark() {
 # Benchmark
 
 \`\`\`
-Name              Metric 1\tMetric 2
+Name              Metric 1\t Metric 2
 plugin.timing.a   ${rand()}\t\t${rand()}
 plugin.timing.b   ${rand()}\t\t${rand()}
 plugin.timing.c   ${rand()}\t\t${rand()}
