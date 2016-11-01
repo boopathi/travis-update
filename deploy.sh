@@ -31,6 +31,8 @@ git config credential.helper "store --file=.git/credentials"
 echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 
 echo "Committing changes..."
+git diff
+git remote
 git add .
 git commit -m "[skip ci] Update Benchmark for ${TRAVIS_COMMIT}"
 
