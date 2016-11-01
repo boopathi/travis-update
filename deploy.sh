@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 function run_benchmark() {
   npm run benchmark
 }
@@ -10,21 +12,31 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
 fi
 
 REPO=`git config remote.origin.url`
-GH_REF=${REPO/git@github.com:/github.com\/}
 
 rm -rf tmp || exit 0
 mkdir tmp
+echo "Running benchmarks..."
 run_benchmark
-( git clone $REPO tmp
+
+( echo "Cloning..."
+  git clone $REPO tmp
   cd tmp
+
+  echo "Configuring..."
   git config user.name "Travis CI"
   git config user.email "$COMMIT_AUTHOR_EMAIL"
-  cp ../benchmarks.md ./benchmarks.md
-  git add .
-  git commit -m "[skip ci] Update Benchmark"
-  echo "Trying to deploy"
   git config credential.helper "store --file=.git/credentials"
   echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+
+  echo "Copying changes..."
+  cp ../benchmarks.md ./benchmarks.md
+
+  echo "Committing changes..."
+  git add .
+  git commit -m "[skip ci] Update Benchmark"
+
+  echo "Pushing commit to master..."
   git push --quiet origin master > /dev/null 2>&1
-  echo $?
+
+  echo "Done"
 )
