@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 function run_benchmark() {
   npm run benchmark
 }
@@ -24,5 +22,7 @@ run_benchmark
   cp ../benchmarks.md ./benchmarks.md
   git add .
   git commit -m "[skip ci] Update Benchmark"
+  echo "Trying to deploy"
   git push --quiet "https://${GH_TOKEN}@${GH_REF}" > /dev/null 2>&1
+  echo $?
 )
