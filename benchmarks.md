@@ -1,13 +1,14 @@
 
+<!--This file is auto generated. DO NOT EDIT-->
 # Benchmark
 
 ```
 Name              Metric 1	Metric 2
-plugin.timing.a   83		77
-plugin.timing.b   11		82
-plugin.timing.c   41		62
-plugin.timing.d   93		43
-plugin.timing.e   3		53
-plugin.timing.f   60		83
-plugin.timing.g   4		23
+plugin.timing.a   13		15
+plugin.timing.b   85		49
+plugin.timing.c   44		20
+plugin.timing.d   6		74
+plugin.timing.e   78		64
+plugin.timing.f   98		56
+plugin.timing.g   24		76
 ```
