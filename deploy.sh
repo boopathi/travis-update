@@ -7,7 +7,12 @@ function run_benchmark() {
 }
 
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
-  echo "Skipping benchmark"
+  echo "Skipping benchmark - pull request"
+  exit 0
+fi
+
+if [ "$TRAVIS_BRANCH" != "master" ]; then
+  echo "Skipping benchmark - branch is not master"
   exit 0
 fi
 
