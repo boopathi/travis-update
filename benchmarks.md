@@ -3,11 +3,11 @@
 
 ```
 Name              Metric 1	Metric 2
-plugin.timing.a   86		70
-plugin.timing.b   51		8
-plugin.timing.c   21		52
-plugin.timing.d   15		88
-plugin.timing.e   76		37
-plugin.timing.f   39		52
-plugin.timing.g   54		54
+plugin.timing.a   7		63
+plugin.timing.b   28		59
+plugin.timing.c   92		49
+plugin.timing.d   88		74
+plugin.timing.e   40		94
+plugin.timing.f   34		36
+plugin.timing.g   31		84
 ```
