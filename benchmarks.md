@@ -2,12 +2,12 @@
 # Benchmark
 
 ```
-Name              Metric 1	Metric 2
-plugin.timing.a   60		99
-plugin.timing.b   41		96
-plugin.timing.c   14		9
-plugin.timing.d   16		9
-plugin.timing.e   36		1
-plugin.timing.f   4		24
-plugin.timing.g   25		31
+Name              Metric 1	 Metric 2
+plugin.timing.a   70		43
+plugin.timing.b   6		55
+plugin.timing.c   80		30
+plugin.timing.d   23		86
+plugin.timing.e   18		62
+plugin.timing.f   72		58
+plugin.timing.g   79		33
 ```
