@@ -23,6 +23,8 @@ run_benchmark
   git add .
   git commit -m "[skip ci] Update Benchmark"
   echo "Trying to deploy"
-  git push --force --quiet "https://${GH_TOKEN}:@${GH_REF}" > /dev/null 2>&1
+  git config credential.helper "store --file=.git/credentials"
+  echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  git push --quiet origin master > /dev/null 2>&1
   echo $?
 )
